@@ -7,50 +7,84 @@
 }
 
 body {
-    --primary: #FF3E41;
     background: linear-gradient(to right, #e2e2e2, #FF3E41);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     height: 100vh;
 }
+
+
+/* ================= CONTAINER ================= */
 
 .container {
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 750px;
+    width: 1000px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 600px;
 }
 
-.container p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 20px 0;
+
+/* ================= FORMS ================= */
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 100%;
+    overflow-y: auto;
 }
 
-.container span {
-    font-size: 12px;
+.container h1 {
+    font-weight: 600;
+    margin: 10px 0;
 }
 
-.container a {
-    color: #000000;
+.container label {
+    width: 100%;
     font-size: 13px;
-    text-decoration: none;
-    margin: 15px 0 10px;
+    margin-top: 6px;
 }
+
+.container input,
+.container textarea,
+.container select {
+    background-color: #f0f0f0;
+    border: none;
+    margin: 5px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    /* كبر الطول */
+    resize: vertical;
+    /* المستخدم يقدر يكبر ويصغر */
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+/* ================= BUTTONS ================= */
 
 .container button {
     background-color: #FF3E41;
     color: #fff;
     font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
+    padding: 10px 35px;
+    border: none;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -59,57 +93,47 @@ body {
     cursor: pointer;
 }
 
-.container button .hidden {
+button.hidden {
     background-color: transparent;
-    border-color: #fff;
+    border: 1px solid #fff;
 }
 
-.container form {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 40px;
-    height: 100%;
-}
 
-.container input {
-    background-color: #f0f0f0;
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
-    text-shadow: 155505px 150px
-}
+/* ================= FORM CONTAINERS ================= */
 
 .form-container {
     position: absolute;
     top: 0;
     height: 100%;
+    width: 50%;
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in {
+
+/* student form */
+
+.join-student-container {
     left: 0;
-    width: 50%;
     z-index: 2;
 }
 
-.container.active .sign-in {
-    transform: translateX(100%);
-}
 
-.sign-up {
+/* car owner form */
+
+.join-us {
     left: 0;
-    width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container.active .sign-up {
+
+/* when active */
+
+.container.active .join-student-container {
+    transform: translateX(100%);
+}
+
+.container.active .join-us {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -129,20 +153,8 @@ body {
     }
 }
 
-.social-icons {
-    margin: 20px 0;
-}
 
-.social-icons a {
-    border: 1px solid #000000;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    height: 40px;
-    width: 40px;
-}
+/* ================= TOGGLE ================= */
 
 .toggle-container {
     position: absolute;
@@ -162,14 +174,12 @@ body {
 }
 
 .toggle {
-    background-color: #FF3E41;
-    height: 100%;
-    background: linear-gradient(to right, #FF3E41, #ff6659);
+    background: linear-gradient(to right, #FF3E41, #FF3E41);
     color: #fff;
     position: relative;
     left: -100%;
-    height: 100%;
     width: 200%;
+    height: 100%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
@@ -185,11 +195,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-direction: column;
     padding: 0 30px;
     text-align: center;
     top: 0;
-    transition: translateX(0);
     transition: all 0.6s ease-in-out;
 }
 

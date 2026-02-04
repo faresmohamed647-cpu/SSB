@@ -180,29 +180,50 @@
     transition: all 0.25s ease;
 }
 
-/* LOGIN Button */
-.navbar .buttons button:first-child{
+/* الزرار الأول (Parents / Login) */
+.navbar .buttons a:first-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 45px;
+    border-radius: 25px; /* Rounded أفضل */
     background: transparent;
-    --primary: #FF3E41;
     border: 2px solid #FF3E41;
+    color: #FF3E41;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease; /* حركة أنعم */
 }
 
-.navbar .buttons button:first-child:hover{
+.navbar .buttons a:first-child:hover {
     background: #FF3E41;
     color: #fff;
-    box-shadow: 0 0 12px #FF3E41;
+    box-shadow: 0 4px 15px rgba(255, 62, 65, 0.5);
+    transform: translateY(-2px); /* حركة بسيطة */
 }
 
-/* SIGN UP Button */
-.navbar .buttons button:last-child{
+/* الزرار الثاني (Car Owner / Sign Up) */
+.navbar .buttons a:last-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 45px;
+    border-radius: 25px;
     background: #FF3E41;
     color: #fff;
-    border: 2px solid #FF3E41;}
+    border: 2px solid #FF3E41;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
 
-.navbar .buttons button:last-child:hover{
+.navbar .buttons a:last-child:hover {
     background: transparent;
     color: #FF3E41;
-    box-shadow: 0 0 12px #FF3E41;
+    box-shadow: 0 4px 15px rgba(255, 62, 65, 0.5);
+    transform: translateY(-2px);
 }
 
 
@@ -266,7 +287,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/pack1.jpg) center center no-repeat;
     background-size: cover;
 }
 
