@@ -543,3 +543,176 @@
 .footer .copyright a {
     color: var(--light);
 }
+/* Offers */
+.offers {
+    background: #e9f7f2;
+    border-radius: 14px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.offers h3 {
+    color: #FF3E41;
+    margin-bottom: 10px;
+}
+
+.offers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offers li {
+    padding-left: 18px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.offers li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #FF3E41;
+}
+
+/* Calculator Card */
+.calculator-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.calculator-card h1 {
+    color: #FF3E41;
+    margin-bottom: 5px;
+}
+
+.desc {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Result Box */
+.result-box {
+    background: #f2fbf7;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.result-box h2 {
+    color: #FF3E41;
+    margin-bottom: 15px;
+}
+
+.big-number {
+    font-size: 38px;
+    font-weight: bold;
+    color: #FF3E41;
+    margin-bottom: 20px;
+}
+
+.lines div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #010000;
+}
+
+.features {
+    margin-top: 20px;
+    padding-left: 18px;
+}
+
+.features li {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+/* Controls */
+.field {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.option strong {
+    color: #1f3c88;
+}
+
+.payment {
+    display: flex;
+    gap: 15px;
+}
+
+.payment label {
+    background: #f1f1f1;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .calculator {
+        grid-template-columns: 1fr;
+    }
+}
+/* زرار Order now */
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 160px;
+    height: 45px;
+
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #FF3E41;
+    color: #FF3E41;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.4s ease;
+}
+
+/* Hover */
+.btn-link:hover {
+    background: #FF3E41;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 62, 65, 0.5);
+    transform: translateY(-2px);
+}

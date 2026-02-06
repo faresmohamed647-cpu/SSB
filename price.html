@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/price.css" rel="stylesheet">
 </head>
 
 <body>
@@ -112,7 +113,7 @@
                             <p><i class="fa fa-check text-success me-3"></i>Direct chat with driver</p>
                             <p><i class="fa fa-check text-success me-3"></i>Monthly trip reports</p>
                             <p><i class="fa fa-check text-success me-3"></i>Daily school-time support</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                            <a class="btn-slide mt-2" href="pay.html"><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                             <p><i class="fa fa-check text-success me-3"></i>Unlimited parent accounts</p>
                             <p><i class="fa fa-check text-success me-3"></i>Driver rating & feedback</p>
                             <p><i class="fa fa-check text-success me-3"></i>Smart route optimization</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                            <a class="btn-slide mt-2" href="pay.html"><i class="fa fa-arrow-right"></i><span >7 Days Free Trial</span></a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +153,7 @@
                             <p><i class="fa fa-check text-success me-3"></i>Home to classroom supervision</p>
                             <p><i class="fa fa-check text-success me-3"></i>Live monitoring all hours</p>
                             <p><i class="fa fa-check text-success me-3"></i>Phone & WhatsApp support</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
+                            <a class="btn-slide mt-2" href="pay.html"><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -160,6 +161,113 @@
         </div>
     </div>
     <!-- Pricing End -->
+        <!-- Offers -->
+    <div class="offers">
+        <h3>Family Offers</h3>
+        <ul>
+            <li>7-day free trial for every family</li>
+            <li>20% discount for 3 children or more</li>
+            <li>25% discount on yearly payment</li>
+        </ul>
+    </div>
+
+    <!-- Calculator Card -->
+    <div class="calculator-card">
+
+        <h1>Family Savings Calculator</h1>
+        <p class="desc">
+            See how much you can save monthly by switching to our school plans.
+        </p>
+
+        <div class="calculator">
+
+            <!-- Result -->
+            <div class="result-box">
+                <h2>Estimated Monthly Savings</h2>
+
+                <div class="big-number" id="saving">0 EGP</div>
+
+                <div class="lines">
+                    <div>
+                        <span>Current Monthly Cost</span>
+                        <strong id="currentTotal">0</strong> EGP
+                    </div>
+                    <div>
+                        <span>School Monthly Cost</span>
+                        <strong id="schoolTotal">0</strong> EGP
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li>Dedicated family support</li>
+                    <li>Real-time tracking</li>
+                    <li>Cancel anytime within 48 hours</li>
+                </ul>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+
+                <div class="field">
+                    <label>Number of Children</label>
+                    <input type="number" id="children" min="1" max="6" value="1">
+                </div>
+
+                <div class="field">
+                    <label>Current Cost per Child (Monthly)</label>
+                    <input type="number" id="currentCost" value="900">
+                </div>
+
+                <div class="field">
+                    <label>Select Plan</label>
+
+                    <label class="option">
+                        <input type="radio" name="plan" value="450" checked>
+                        <span>Basic Plan</span>
+                        <strong>450 EGP</strong>
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="plan" value="650">
+                        <span>Premium Plan</span>
+                        <strong>650 EGP</strong>
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="plan" value="950">
+                        <span>VIP Plan</span>
+                        <strong>950 EGP</strong>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label>Payment Method</label>
+
+                    <div class="payment">
+                        <label>
+                            <input type="radio" name="payment" value="monthly" checked>
+                            Monthly
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="quarterly">
+                            Quarterly
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="yearly">
+                            Yearly
+                            
+                        </label>
+                        <a href="pay.html"class="btn-link"data-aos="fade-up"data-aos-duration="1200"data-aos-delay="600">Order now</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
     <!-- Quote Start -->
