@@ -690,3 +690,74 @@ input[type="number"] {
     }
 }
 
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 45px;
+
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #FF3E41;
+    color: #FF3E41;
+
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px 5px;
+
+    transition: all 0.4s ease;
+}
+
+.order-btn:hover {
+    background: #FF3E41;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 62, 65, 0.5);
+    transform: translateY(-2px);
+}
+
+.lang-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 160px;
+
+    background: #fff;
+    border-radius: 15px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.lang-wrapper.active .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu button {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #FF3E41;
+}
+
+.lang-menu button:hover {
+    background: #FF3E41;
+    color: #fff;
+}
